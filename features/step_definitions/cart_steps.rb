@@ -3,9 +3,9 @@ Dado('que estou na página home') do  # Ele busca por alguma linha no(s) documen
   end
   
   Quando("eu clico em Cart") do # Aqui está sendo passado dois parametros string que existe(m) no(s) documento(s) login.feature
-    @app.cart.cart   # Chama a page login e executar a função login passsando os parâmetros email e password
+    @app.cart.clicar_no_carrinho   # Chama a page login e executar a função login passsando os parâmetros email e password
   end
                                                                            
   Então("devo ver {string} na área do carrinho") do |expect_message|                 
-    expect(@app.cart.message).to include expect_message   # Valida se a mensagem do alert contém com a mensagem esperada
+    expect(@app.cart.capturar_texto_carrinho).to eql expect_message   # Valida se a mensagem do alert contém com a mensagem esperada
   end
