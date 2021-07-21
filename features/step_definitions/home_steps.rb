@@ -7,5 +7,5 @@ Quando('clico no primeiro produto') do
 end
 
 Então('devo ver {string} na área do produto') do |expect_message|
-  expect(@app.home.verificar_botao).to eql expect_message   # Valida se a mensagem do alert contem com a mensagem esperada
+  expect(@app.home.verificar_botao).to eql expect_message
 end
