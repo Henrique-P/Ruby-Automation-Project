@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'site_prism'
-
+require 'pry'
 # Registrando o driver
 Capybara.register_driver :site_prism do |app|
   Capybara::Selenium::Driver.new(app, browser:  :chrome)  # Vamos utilizar o navegador chrome

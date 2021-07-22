@@ -1,5 +1,8 @@
 class App
-    def cart
-      Cart.new
-    end
+  def home
+    Home.new
   end
+  def product
+    Product.new
+  end
+end

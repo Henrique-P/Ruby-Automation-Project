@@ -1,9 +1,9 @@
 #language: pt
 
 @test
-Funcionalidade: Carrinho
+Funcionalidade: Adicionar produto ao carrinho
     
-  Cenario: Sucesso ao abrir o carrinho
-    Dado que estou na página home
-    Quando eu clico em Cart
-    Então devo ver "SHOPPING-CART SUMMARY" na área do carrinho
+  Cenario: Sucesso ao abrir o produto
+    Dado que estou na pagina home
+    Quando adiciono um produto ao carrinho e prossigo para checkout
+    Então devo ver "Your shopping cart contains: 1 Product" no carrinho

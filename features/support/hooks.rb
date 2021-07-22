@@ -1,3 +1,3 @@
 Before do
-    @app = App.new
-  end
+  @app = App.new
+end
