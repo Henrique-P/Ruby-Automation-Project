@@ -4,7 +4,7 @@ end
 
 Quando('adiciono um produto ao carrinho e prossigo para checkout') do
   @app.home.clicar_no_produto
-  @app.home.clicar_em_comprar
+  @app.product.add_to_cart
 end
 
 Então('devo ver {string} no carrinho') do |expect_message|
