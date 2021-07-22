@@ -5,5 +5,5 @@ E('prossigo até o final do processo')do
 end
 
 Então('devo ver {string} na pagina final')do |expected_message|
-  expect(@app.order.verificate).to eql expected_message
+  expect(@app.order.verify).to eql expected_message
 end

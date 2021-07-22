@@ -6,7 +6,7 @@ class App
     Product.new
   end
   def login
-    Login.new    
+    Login.new
   end
   def order
     Order.new

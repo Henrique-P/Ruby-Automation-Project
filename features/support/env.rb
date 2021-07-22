@@ -16,5 +16,5 @@ Capybara.configure do |config|
   Capybara.default_driver = :site_prism
   Capybara.page.driver.browser.manage.window.maximize  # Maximizando a tela
   config.default_max_wait_time = 10  # Tempo máximo que a automação vai esperar para a página carregar ou esperar um elemento
-  config.app_host = 'http://automationpractice.com/index.php' # URL base que vamos utilizar
+  config.app_host = 'http://automationpractice.com/index.php?controller=authentication&back=my-account' # URL base que vamos utilizar
 end
