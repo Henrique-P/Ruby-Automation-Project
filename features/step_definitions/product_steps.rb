@@ -1,3 +1,4 @@
-Então('devo ver {string} no carrinho') do |expect_message|
-    expect(@app.product.capturar_texto_carrinho).to include expect_message
-  end
+E('prossigo para checkout') do
+  @app.product.go_to_cart
+  @app.product.checkout
+end
