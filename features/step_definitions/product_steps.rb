@@ -28,6 +28,6 @@ E('o removo do carrinho') do
 end
 
 Então('devo ver {string} no carrinho') do |expected_message|
-  sleep(2)
+  page.driver.browser.navigate.refresh
   expect(find('#cart_title').text).to eql expected_message
 end
