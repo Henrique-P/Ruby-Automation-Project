@@ -1,9 +1,22 @@
 #language: pt
 
+
+Funcionalidade: Testar a funcionalidade de fazer um pedido
+  Contexto: Fazer login
+    Dado que estou na pagina de login
+    Quando faço o login com 'novoemailteste@gmail.com' e 'teste123'
+    Então devo ver "MY ACCOUNT" na área logada
+
 @test
-Funcionalidade: Adicionar produto ao carrinho
-    
-  Cenario: Sucesso ao abrir o produto
-    Dado que estou na pagina home
-    Quando adiciono um produto ao carrinho e prossigo para checkout
-    Então devo ver "Your shopping cart contains: 1 Product" no carrinho
+  Cenario: Fazer um pedido.
+    Dado que estou logado e na pagina home
+    Quando adiciono um produto ao carrinho
+    E prossigo até o final do processo
+    Então devo ver 'Your order on My Store is complete.' na pagina final
+
+@test2
+  Cenario: Fazer um pedido com dois items.
+    Dado que estou logado e na pagina home
+    Quando adiciono dois produtos ao carrinho
+    E prossigo até o final do processo
+    Então devo ver 'Your order on My Store is complete.' na pagina final
