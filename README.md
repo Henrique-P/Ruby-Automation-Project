@@ -1,8 +1,6 @@
 # Ruby-Automation-Project
-This is an automation project for learning purposes.
+This is an automation project written in Ruby for learning purposes.
 
-At the current iteration, this code uses google chrome to test http://automationpractice.com/index.php.
+This code uses Cucumber, R-Spec and Selenium Webdriver paired with Google Chrome and Chromedriver to test http://automationpractice.com/index.php.
 
-It adds the first product in the home page to the cart, goes to checkout, and then validates the cart.
-
-More features are planned.
+There are two features with two cenarios each. These cenarios consist in placing an order from the start to the end, and testing the cart funcionality.
