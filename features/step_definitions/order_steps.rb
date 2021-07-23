@@ -1,5 +1,7 @@
 E('prossigo até o final do processo')do
-  @app.order.address
+  @app.product.checkout
+  # @app.order.address
+  @app.product.checkout
   @app.order.shipping
   @app.order.payment
 end
