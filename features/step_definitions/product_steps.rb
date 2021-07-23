@@ -28,5 +28,6 @@ E('o removo do carrinho') do
 end
 
 Então('devo ver {string} no carrinho') do |expected_message|
+  sleep(2)
   expect(find('#cart_title').text).to eql expected_message
 end
